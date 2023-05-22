@@ -3,16 +3,13 @@
     padding: 0;
     margin: 0;
 }
-
-body {
-    background-color: #d9dcd6;
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 200px;
 }
 
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
     background-color: #2a607c;
-    color: #ffffff;
 }
 
 .header h1 {
@@ -22,6 +19,39 @@ body {
 
 .header h1 .seo {
     color: #d9dcd6;
+    font-size: 48px;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    transition: 5s;
+    background-color: #2a607c;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+
+}
+.header ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+.header ul a{
+    color: #000;
+    font-size: 18px;
+    transition: .5s linear ;
+}
+
+.header ul a:hover{
+     color: #ffffff;
+
 }
 
 .header div {
@@ -86,55 +116,24 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.benefit-lead,.benefit-brand,.benefit-cost{
     margin-bottom: 32px;
     color: #ffffff;
+    text-align: center;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.benefit-lead h3,.benefit-brand h3,.benefit-cost h3  {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-lead img ,.benefit-brand img,.benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+.search-engine-optimization,.online-reputation-management,.social-media-marketing {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -143,47 +142,19 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.search-engine-optimization img,.online-reputation-management img,.social-media-marketing img{
     max-height: 200px;
+    cursor: pointer;
+    transition: 400px; ;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
+.search-engine-optimization img:hover,.online-reputation-management img:hover,.social-media-marketing img:hover{
+    filter: grayscale(1);
+    transform: scale(1.03);
 }
 
-.social-media-marketing img {
-    max-height: 200px;
-}
 
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+.search-engine-optimization h2,.online-reputation-management h2,.social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
